@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        < p > Reversed message: "{{ reverseMessage() }}" </p>
+    </div>
+    <script src="vue.min.js"></script>
+    <script>
+        
+            // in component
+        methods: {
+            reverseMessage: function (){
+                return this.message.split('').reverse().join('')
+            }
+        }
+    </script>
+</body>
+
+</html>
